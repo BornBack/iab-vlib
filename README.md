@@ -4,6 +4,7 @@
 - Clone this project
 - make .env file
 - generate key
+- fill database info
 - `composer update`
 - `composer install`
 - `npm install`
