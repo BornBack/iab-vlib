@@ -25,7 +25,7 @@ class RegisterRequest extends FormRequest
     {
         return [
             'name' => "required|max:255",
-            "email" => "required|unique:users,email|email",
+            "email" => "required|unique:users,email|regex:^[\w.+\-]+@gmail\.com$^",
             "password" => "required",
             "mobile" => "required|numeric|unique:users,mobile",
             "fb_link" => "nullable|string",

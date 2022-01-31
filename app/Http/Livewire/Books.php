@@ -10,9 +10,9 @@ class Books extends Component
 {
     use WithPagination;
     public $search;
-    public $perPage = 20;
+    public $perPage = 12;
 
-    
+
     public function getBooksProperty(){
         return Book::when($this->search >= 2 , function ($query){
             $this->resetPage();
